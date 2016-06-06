@@ -65,7 +65,7 @@
             vm.openPopup = function () {
                 $ionicPopup.show({
                     title: vm.selectTitle,
-                    templateUrl: templatePopup,
+                    template: templatePopup,
                     scope: $scope,
                     cssClass: 'aetm-md-select-popup',
                     buttons: [
