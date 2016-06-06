@@ -1,0 +1,30 @@
+{
+  "name": "aetm-ionic-md-select",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/aetm-ionic-md-select.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexetmanon/aetm-ionic-md-select.git"
+  },
+  "keywords": [
+    "angularjs",
+    "angular",
+    "ionic",
+    "material design"
+  ],
+  "author": "Alexandre Bonhomme <wall-e@alexetmanon.com> (http://www.alexetmanon.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexetmanon/aetm-ionic-md-select/issues"
+  },
+  "homepage": "https://github.com/alexetmanon/aetm-ionic-md-select#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
+  }
+}
