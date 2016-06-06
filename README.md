@@ -1,1 +1,1 @@
-# aetm-angular-md-select
+# aetm-ionic-md-select
