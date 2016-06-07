@@ -63,6 +63,9 @@
             };
 
             vm.openPopup = function () {
+                // reset selected value
+                $scope.data.selected = vm.ngModel;
+
                 $ionicPopup.show({
                     title: vm.selectTitle,
                     template: templatePopup,
@@ -71,13 +74,7 @@
                     buttons: [
                         {
                             text: 'ANNULER',
-                            type: 'button-balanced',
-                            onTap: function () {
-                                // reset selected value
-                                $scope.data.selected = vm.ngModel;
-
-                                return $scope.data.selected;
-                            }
+                            type: 'button-balanced'
                         },
                         {
                             text: 'OK',
@@ -88,7 +85,9 @@
                         }
                     ]
                 }).then(function (selected) {
-                    vm.ngModel = selected;
+                    if (selected) {
+                        vm.ngModel = selected;
+                    }
                 });
             };
         }]
